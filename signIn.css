@@ -1,0 +1,53 @@
+body {
+    margin:0px;
+    padding:0px;
+    background-image: url('https://wallpapercave.com/download/4k-hd-anime-pc-wallpapers-wp5121779');
+    background-size: cover;
+    background-position-x:right;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+    z-index:-1;
+}
+.cont1 {
+    position:absolute;
+    position:fixed;
+    z-index:4;
+    top:0%;
+    width:100%;
+    height:7%;
+    background-color:rgba(39, 37, 37, 0.979);
+    backdrop-filter:blur;
+    margin:0px;
+    padding:0px;
+}
+ul {
+    position:absolute;
+    top:5%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration:none;
+    list-style: none;
+    gap: 25px;
+    right:10%;
+}
+a {
+    color:aliceblue;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    top:50%;
+}
+a:hover {
+    color:grey;
+    text-decoration: underline;
+}

@@ -65,6 +65,7 @@ button {
     margin:0px;
     padding:0px;
     right:2%;
+    transition: background-color 0.5s;
 }
 button:hover {
     background-color:rgba(129, 125, 125, 0.904);
@@ -81,7 +82,7 @@ h1 {
 }
 .cont2 {
     position:absolute;
-    width:60%;
+    width:60%; 
     height:400px;
     background-color:rgba(12, 12, 12, 0.895);
     border:1px solid rgba(117, 113, 113, 0.795);
