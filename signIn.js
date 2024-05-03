@@ -5,35 +5,44 @@ function username(){
   const name = document.getElementsByClassName('i1').value[0];
 
 }
-function toggleImage() {
-  const myImage = document.getElementsByClassName('img1')[0];
-  const secondImageSrc = 'https://cdn-icons-png.flaticon.com/128/8771/8771414.png';
-  let isSecondImage = false;
-
-  myImage.addEventListener('click', function () {
-      if (isSecondImage) {
-          myImage.src = 'first-image.jpg'; // Change back to the first image
-          isSecondImage = false;
-      } else {
-          myImage.src = secondImageSrc; // Change to the second image
-          isSecondImage = true;
-      }
-  });
-}
-
-//document.addEventListener('DOMContentLoaded', toggleImage);
 
 function detectCapsLock() {
-  const inputField = document.getElementsByClassName('i2')[0];
+  const inputField = document.querySelector('.i2');
+  const capsLockMessage = document.getElementsByClassName('caps')[0];
+  
   inputField.addEventListener('keydown', function(event) {
-      const capsLockState = event.getModifierState('CapsLock');
-      if (capsLockState) {
-          console.log('Caps Lock is ON');
+      const capsLockOn = event.getModifierState('CapsLock');
+      if (capsLockOn) {
+          capsLockMessage.style.display = 'block';
       } else {
-          console.log('Caps Lock is OFF');
+          capsLockMessage.style.display = 'none';
       }
   });
 }
 
-// Call the function when the DOM content is loaded
-document.addEventListener('DOMContentLoaded', detectCapsLock);
+detectCapsLock();
+
+function switchImage1() {
+  const firstImage = document.getElementsByClassName('img1')[0];
+  const secondImage = document.getElementsByClassName('img2')[0];
+
+  firstImage.addEventListener('click', function() {
+      firstImage.style.display = 'none';
+      secondImage.style.display = 'block';
+  });
+}
+
+switchImage1();
+
+function switchImage2() {
+  const firstImage = document.getElementsByClassName('img2')[0];
+  const secondImage = document.getElementsByClassName('img1')[0];
+
+  firstImage.addEventListener('click', function() {
+      firstImage.style.display = 'none';
+      secondImage.style.display = 'block';
+  });
+}
+
+switchImage2();
+

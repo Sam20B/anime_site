@@ -9,16 +9,17 @@
 <body>
     <form class="cont">
         <h1>Sign In</h1>
-        <div class="usernameCont" onclick="focusInput()">
+        <div class="usernameCont">
             <input class="i1" type="text" id="username" required placeholder=" ">
             <label class="l1" for="username">Username</label>
         </div>
-        <div class="passwordCont" onclick="focusInput()">
-            <input class="i2" type="password" id="password" oninput="detectCapsLock()" required maxlength="10" placeholder=" ">
+        <div class="passwordCont" >
+            <input class="i2" type="password" oninput="detectCapsLock(this)" id="password" required maxlength="10" placeholder=" ">
             <label class="l2" for="password">Password</label>
-            <img class="img1" onclick="toggleImage()" src="https://cdn-icons-png.flaticon.com/128/8771/8771468.png">
-            <img class="img2" src="https://cdn-icons-png.flaticon.com/128/8771/8771414.png">
+            <img class="img1" onclick="switchImage1()" src="https://cdn-icons-png.flaticon.com/128/8771/8771468.png">
+            <img class="img2" onclick="switchImage2()" src="https://cdn-icons-png.flaticon.com/128/8771/8771414.png">
         </div>
+        <p class="caps">Caps Lock</p>
         <button class="b1">Submit</button>
     </form>
 </body>
