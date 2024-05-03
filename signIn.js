@@ -35,34 +35,41 @@ function switchImage1() {
 switchImage1();
 
 function switchImage2() {
-  const firstImage = document.getElementsByClassName('img2')[0];
-  const secondImage = document.getElementsByClassName('img1')[0];
+  const firstImage = document.getElementsByClassName('img1')[0];
+  const secondImage = document.getElementsByClassName('img2')[0];
 
-  firstImage.addEventListener('click', function() {
-      firstImage.style.display = 'none';
-      secondImage.style.display = 'block';
+  secondImage.addEventListener('click', function() {
+      secondImage.style.display = 'none';
+      firstImage.style.display = 'block';
   });
 }
 
 switchImage2();
 
-function togglePassword() {
-  const passwordField = document.getElementsByClassName('i2');
-  const showPasswordImage = document.getElementById('img2');
-  const hidePasswordImage = document.getElementById('img1');
+function togglePassword1() {
+  const passwordField = document.getElementsByClassName('i2')[0];
+  const hidePasswordImage = document.getElementsByClassName('img1')[0];
+  const showPasswordImage = document.getElementsByClassName('img2')[0];
 
   showPasswordImage.addEventListener('click', function() {
       passwordField.type = 'text';
-      showPasswordImage.style.display = 'none';
-      hidePasswordImage.style.display = 'inline';
-  });
-
-  hidePasswordImage.addEventListener('click', function() {
-      passwordField.type = 'password';
       hidePasswordImage.style.display = 'none';
       showPasswordImage.style.display = 'inline';
   });
 }
 
-togglePassword();
+togglePassword1();
 
+function togglePassword2() {
+  const passwordField = document.getElementByClassName('i2')[0];
+  const hidePasswordImage = document.getElementByClassName('img1')[0];
+  const showPasswordImage = document.getElementByClassName('img2')[0];
+
+  hidePasswordImage.addEventListener('click', function() {
+    passwordField.type = 'password';
+    hidePasswordImage.style.display = 'inline';
+    showPasswordImage.style.display = 'none';
+});
+}
+
+togglePassword2();

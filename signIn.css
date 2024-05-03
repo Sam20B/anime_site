@@ -34,11 +34,11 @@ h1 {
     font-size:45px;
     left: 36.5%;
     font-family:Arial, Helvetica, sans-serif;
-    color:rgba(117, 117, 202, 0.685);
+    color:rgba(121, 186, 240, 0.87);
 }
 .usernameCont {
     position:absolute;
-    border:2px solid rgba(117, 117, 202, 0.685);
+    border:2px solid rgba(121, 186, 240, 0.87);
     border-radius:10px;
     height:90px;
     width:80%;
@@ -72,7 +72,7 @@ input {
     border:none;
     background-color: rgba(117, 117, 202, 0);
     font-size:18px;
-    color:rgba(117, 117, 202, 0.9);
+    color:rgba(121, 186, 240, 0.87);
 }
 label {
     position:absolute;
@@ -81,33 +81,18 @@ label {
     font-family:Arial, Helvetica, sans-serif;
     font-size:20px;
     z-index:2;
-    color:rgba(117, 117, 202, 0.685);
+    color:rgba(121, 186, 240, 0.87);
     transition: top 0.3s,left 0.3s,font-size 0.3s;
 }
 .passwordCont {
     position:absolute;
-    border:2px solid rgba(117, 117, 202, 0.685);
+    border:2px solid rgba(121, 186, 240, 0.87);
     border-radius:10px;
     height:90px;
     width:80%;
     background-color: rgba(117, 117, 202, 0);
     left:10%;
     top:48%;
-}
-.i3 {
-    position:absolute;
-    width:20px;
-    height:20px;
-    border:1px solid rgba(34, 34, 68, 0.8);
-    top:70%;
-    left:10%;
-    background-color: rgba(34, 34, 68, 0);
-}
-.l3 {
-    position:absolute;
-    top:70.5%;
-    left:16%;
-    font-size:18px;
 }
 img {
     position:absolute;
@@ -126,8 +111,9 @@ img {
 .caps {
     position:absolute;
     top:65%;
+    display:none;
     left:13%;
-    color:rgba(117, 117, 202, 0.9);
+    color:rgba(121, 186, 240, 0.87);
     font-size:18px;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -143,9 +129,9 @@ img {
     color:rgba(34, 34, 68, 0.8);
     font-size:20px;
     font-weight:500;
-    background-color: rgba(117, 117, 202, 0.685);
+    background-color: rgba(121, 186, 240, 0.685);
     transition: background-color 0.5s;
 }
 button:hover {
-    background-color: rgba(117, 117, 202, 0.9);
+    background-color: rgba(121, 186, 240, 0.9);
 }
