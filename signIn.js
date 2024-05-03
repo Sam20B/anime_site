@@ -46,3 +46,23 @@ function switchImage2() {
 
 switchImage2();
 
+function togglePassword() {
+  const passwordField = document.getElementsByClassName('i2');
+  const showPasswordImage = document.getElementById('img2');
+  const hidePasswordImage = document.getElementById('img1');
+
+  showPasswordImage.addEventListener('click', function() {
+      passwordField.type = 'text';
+      showPasswordImage.style.display = 'none';
+      hidePasswordImage.style.display = 'inline';
+  });
+
+  hidePasswordImage.addEventListener('click', function() {
+      passwordField.type = 'password';
+      hidePasswordImage.style.display = 'none';
+      showPasswordImage.style.display = 'inline';
+  });
+}
+
+togglePassword();
+
