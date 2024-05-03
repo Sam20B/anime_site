@@ -45,11 +45,23 @@ h1 {
     left:10%;
     top:25%;
 }
-div:focus-within label {
+/*div:focus-within label {
     top: 7%;
     left: 5%;
     font-size: 18px;
-  }
+}*/
+.i1:focus + .l1,
+.i1:not(:placeholder-shown) + .l1 {
+  top: 7%;
+  font-size: 18px;
+  left:5%;
+}
+.i2:focus + .l2,
+.i2:not(:placeholder-shown) + .l2 {
+  top: 7%;
+  font-size: 18px;
+  left:5%;
+}
 input {
     position:absolute;
     top:35%;
