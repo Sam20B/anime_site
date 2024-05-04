@@ -1,11 +1,3 @@
-function focusInput() {
-  document.getElementById('username').focus();
-}
-function username(){
-  const name = document.getElementsByClassName('i1').value[0];
-
-}
-
 function detectCapsLock() {
   const inputField = document.querySelector('.i2');
   const capsLockMessage = document.getElementsByClassName('caps')[0];
@@ -52,22 +44,23 @@ function togglePassword1() {
   const showPasswordImage = document.getElementsByClassName('img2')[0];
 
   showPasswordImage.addEventListener('click', function() {
-      passwordField.type = 'text';
+      passwordField.type = 'password';
       hidePasswordImage.style.display = 'none';
-      showPasswordImage.style.display = 'inline';
+      showPasswordImage.style.display = 'block';
   });
+
 }
 
 togglePassword1();
 
 function togglePassword2() {
-  const passwordField = document.getElementByClassName('i2')[0];
-  const hidePasswordImage = document.getElementByClassName('img1')[0];
-  const showPasswordImage = document.getElementByClassName('img2')[0];
+  const passwordField = document.getElementsByClassName('i2')[0];
+  const hidePasswordImage = document.getElementsByClassName('img1')[0];
+  const showPasswordImage = document.getElementsByClassName('img2')[0];
 
   hidePasswordImage.addEventListener('click', function() {
-    passwordField.type = 'password';
-    hidePasswordImage.style.display = 'inline';
+    passwordField.type = 'text';
+    hidePasswordImage.style.display = 'block';
     showPasswordImage.style.display = 'none';
 });
 }
