@@ -106,7 +106,7 @@ h1 {
 .c2h2 {
     position:absolute;
     top:30%;
-    left:15%;
+    left:18%;
     font-size:xx-large;
     font-family:consolas;
     font-weight:700px;
@@ -115,7 +115,7 @@ h1 {
 .c2p1 {
     position:absolute;
     top:42%;
-    left:15%;
+    left:18%;
     font-size:medium;
     font-family:consolas;
     color:rgb(92, 188, 233);
@@ -124,7 +124,7 @@ h1 {
 .descgenre {
     position:absolute;
     top:47%;
-    left:15%;
+    left:18%;
     font-family:consolas;
     font-size:medium;
     font-weight:500px;
@@ -134,7 +134,7 @@ h1 {
 .wiki {
     position:absolute;
     top:70%;
-    left:37%;
+    left:40%;
     font-size:medium;
     font-family:consolas;
     color:rgb(92, 188, 233);
@@ -519,4 +519,34 @@ h1 {
     font-size:small;
     font-family:consolas;
     color:aliceblue;
+}
+.about {
+    position:absolute;
+    top:35%;
+    left:30%;
+    color:rgb(203, 212, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.contact {
+    position:absolute;
+    top:35%;
+    left:40%;
+    color:rgb(203, 212, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.support {
+    position:absolute;
+    top:35%;
+    left:50%;
+    color:rgb(203, 212, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.spacer {
+    position:absolute;
+    top:295%;
+    height:15%;
+    width:100%;
 }
