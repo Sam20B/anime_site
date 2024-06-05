@@ -501,14 +501,14 @@ h1 {
     position:absolute;
     top:9%;
     left:5%;
-    height:10%;
-    width:8%;
+    height:9%;
+    width:10%;
     border-radius:50%;
 }
 .c9p1 {
     position:absolute;
     top:5%;
-    left:15%;
+    left:19%;
     font-size:small;
     font-family:consolas;
     color:aliceblue;
@@ -516,7 +516,7 @@ h1 {
 .c9p2 {
     position:absolute;
     top:15%;
-    left:15%;
+    left:19%;
     font-size:small;
     font-family:consolas;
     color:aliceblue;
