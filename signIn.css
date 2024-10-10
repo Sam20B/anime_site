@@ -1,7 +1,7 @@
 body {
-    margin:0px;
-    padding:0px;
+    overflow-x: hidden;
     background-image: url('https://wallpapercave.com/download/4k-hd-anime-pc-wallpapers-wp5121779');
+    background-color: rgba(13, 13, 44, 0.925);
     background-size: cover;
     background-position-x:right;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.658); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.858); /* Adjust the opacity as needed */
     z-index:-1;
 }
 nav {
