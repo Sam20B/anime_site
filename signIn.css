@@ -21,7 +21,7 @@ body::before {
     position:absolute;
     height:75%;
     width:40%;
-    background: linear-gradient(to bottom right, #49649cc7, #050530c7);
+    background: linear-gradient(to bottom right, #1a2b4ec7, #050530c7);
     border-radius:15px;
     box-shadow:2px 10px 20px 10px rgba(0, 0, 0, 0.205);
     top:12.5%;
