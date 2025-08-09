@@ -7,11 +7,11 @@ print("comp's choice: " + comp)
 
 if comp == player:
     print("It's a tie!")
-    
+
 elif comp == 'rock' and player == 'paper' or \
     comp == 'paper' and player == 'scissors' or \
     comp == 'scissors' and player == 'rock':
         print("You won!")
-        
+
 else:
-    print("You lost!")
+    print("You lost!")#more content
