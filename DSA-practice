@@ -1,17 +1,19 @@
-import random
+s = input(str())
+def roman_to_int(s):
+    roman_map = {
+        'I': 1, 'V': 5, 'X': 10, 'L': 50,
+        'C': 100, 'D': 500, 'M': 1000
+    }
 
-choices = ['rock','paper','scissors']
-comp = random.choice(choices)
-player = input(f"Enter your choice(rock,paper or scissors): ")
-print("comp's choice: " + comp)
+    total = 0
+    prev_value = 0
 
-if comp == player:
-    print("It's a tie!")
+    for char in reversed(s):  # Traverse from right to left
+        value = roman_map[char]
+        if value < prev_value:
+            total -= value
+        else:
+            total += value
+        prev_value = value
 
-elif comp == 'rock' and player == 'paper' or \
-    comp == 'paper' and player == 'scissors' or \
-    comp == 'scissors' and player == 'rock':
-        print("You won!")
-
-else:
-    print("You lost!")#more content
+    return total
